@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundColour">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/customborder"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textViewBoost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="BOOSTS"
+            android:textAlignment="center"
+            android:textColor="@color/colourBlack"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:background="@null"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/playadbtn"
+                android:id="@+id/adboost"/>
+
+            <Button
+                android:id="@+id/btnDonate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/playadbtn"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewTwoHourBoost"
+                android:textColor="@color/colourBlack"
+                android:layout_alignParentLeft="true"
+                android:textSize="11dp"
+                android:textAlignment="center"
+                android:text="Warp 2 Minutes"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/playadbtn" />
+
+            <TextView
+
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colourBlack"
+                android:layout_alignParentRight="true"
+                android:textSize="10dp"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="center"
+                android:text="DONATE"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/playadbtn"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewWatchAd"
+                    android:textColor="@color/colourBlack"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:text="WATCH AD"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/playadbtn"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colourBlack"
+                    android:layout_alignParentRight="true"
+                    android:textSize="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="center"
+                    android:text="5"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/playadbtn"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/playadbtn" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/playadbtn" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colourBlack"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:text="Fast Forward 5 Mins"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/playadbtn" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colourBlack"
+                    android:layout_alignParentRight="true"
+                    android:textSize="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="center"
+                    android:text="Fast Forward 10 Mins"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/playadbtn" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colourBlack"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:text="3 "
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/playadbtn"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colourBlack"
+                    android:layout_alignParentRight="true"
+                    android:textSize="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="center"
+                    android:text="5"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/playadbtn" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

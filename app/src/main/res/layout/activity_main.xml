@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColour"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp"
+    android:screenOrientation="portrait"
+    tools:context="damoproductions.com.beerontap.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/headerstyle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:padding="2dp"
+                    android:background="@drawable/currentbeer"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/schooner"
+                    android:id="@+id/buttonBeerTypes"/>
+
+                <TextView
+                    android:id="@+id/textViewMoneyCount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="90dp"
+                    android:paddingTop="5dp"
+                    android:text="$ 0"
+                    android:textAlignment="center"
+                    android:textColor="@color/colourBlack"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:layout_width="57dp"
+                    android:layout_height="63dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="2dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/goldenbeer"
+                   />
+
+                <TextView
+                    android:id="@+id/textViewWorkerCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textViewMoneyCount"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="50dp"
+                    android:text="Workers: 0"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colourBlack"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textViewGoldenBeers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textViewMoneyCount"
+                    android:layout_marginRight="50dp"
+                    android:text="Golden Beers: 0"
+                    android:textColor="@color/colourBlack"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textViewMoneyCountPerSec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewWorkerCount"
+                    android:layout_centerInParent="true"
+                    android:text="$ 0 Per Sec."
+                    android:textColor="@color/colourBlack"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTapMe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="TAP ME"
+                android:textAlignment="center"
+                android:textColor="@color/colourBlack"
+                android:textSize="32dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="75dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/boostmenubtn"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:id="@+id/buttonBoostMenu"/>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5336619418792002/1678182572"></com.google.android.gms.ads.AdView>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttons"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/textViewAddWorkerPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="$ 10"
+
+            android:textColor="@color/colourBlack"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buttonStats"
+            android:layout_width="60dp"
+
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/btnstats"
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/buttonAddWorker"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/btnaddworker"
+
+            android:text="Hire Worker"
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/buttonUpgrades"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/buttonAddWorker"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/btnupgrades"
+            android:text="UPGRADES"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/buttonIncreaseBeerValueUpgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="50dp"
+
+        android:text="Increase Beer Value"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewIncreaseBeerValueUpgradePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="100"
+        android:textColor="@color/colourBlack"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonIncreaseWorkerSpeedUpgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonIncreaseBeerValueUpgrade"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="5dp"
+        android:text="Increase Worker Speed"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewIncreaseWorkerSpeedUpgradePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonIncreaseBeerValueUpgrade"
+        android:layout_marginTop="20dp"
+        android:text="500"
+        android:textColor="@color/colourBlack"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonIncreaseWorkerCapacityUpgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonIncreaseWorkerSpeedUpgrade"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="5dp"
+        android:text="Increase Worker Capacity"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewIncreaseWorkerCapacityUpgradePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewIncreaseWorkerSpeedUpgradePrice"
+        android:layout_marginTop="32.5dp"
+        android:text="2500"
+
+        android:textColor="@color/colourBlack"
+        android:textSize="16dp"
+        android:visibility="invisible"
+
+        />
+
+    <Button
+        android:id="@+id/buttonIncreaseBeerSalesUpgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonIncreaseWorkerCapacityUpgrade"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="5dp"
+        android:text="Increase Beer Sales"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewIncreaseBeerSalesUpgradePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewIncreaseWorkerCapacityUpgradePrice"
+        android:layout_marginTop="30dp"
+        android:text="5000"
+        android:textColor="@color/colourBlack"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBeerIcon"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:background="@null"
+
+
+        android:src="@drawable/schooner" />
+
+    <TextView
+        android:id="@+id/textViewBeerValueAnim"
+        android:textColor="@color/colourBlack"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+</RelativeLayout>
+
