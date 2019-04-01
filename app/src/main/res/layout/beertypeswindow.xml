@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundColour">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/customborder"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/beers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="BEERS"
+            android:textAlignment="center"
+            android:textColor="@color/colourBlack"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/schooner"
+                android:id="@+id/currentBeer"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewBeerType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standard Beer"
+                    android:textColor="@color/colourBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewBeerValue"
+                    android:paddingTop="10dp"
+                    android:text="Value: $1"
+                    android:textColor="@color/colourBlack"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewBeerDesc"
+                    android:paddingTop="10dp"
+                    android:text="@string/standardBeerDesc"
+                    android:textColor="@color/colourBlack"
+                    android:textSize="11dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/buttonRightArrow"
+                android:scaleType="centerInside"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/rightarrow"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/buttonLeftArrow"
+                android:scaleType="centerInside"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/leftarrow"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtViewPrestigeBreweryValue"
+                android:layout_above="@+id/buttonPrestige"
+                android:paddingBottom="10dp"
+                android:textColor="@color/colourBlack"
+                android:text="Brewery Value: $0"
+                android:textAlignment="center"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/buttonPrestige"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:text="Sell Brewery to buy&#10;Medicinal Beer Brewery"
+                android:background="@drawable/prestigebuttonstyle" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

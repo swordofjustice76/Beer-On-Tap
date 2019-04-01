@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundColour"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/customborder"
+        android:padding="10dp"
+        >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="STATS"
+        android:textColor="@color/colourBlack"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/stats"
+        />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brewery Value"
+            android:textColor="@color/colourBlack"
+            android:textSize="22dp"
+            android:id="@+id/textViewBreweryValue"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$ 0"
+            android:textColor="@color/colourBlack"
+            android:textSize="30dp"
+            android:id="@+id/intViewBreweryValue"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    android:id="@+id/statsList">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workers: "
+        android:textColor="@color/colourBlack"
+        android:textSize="16dp"
+        android:id="@+id/workers"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/colourBlack"
+        android:id="@+id/textViewWorkerCount2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"/>
+
+</LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Income Per Tap: "
+                android:id="@+id/incomePerTap"
+                android:textColor="@color/colourBlack"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="$ 0"
+                android:textColor="@color/colourBlack"
+                android:id="@+id/textViewMoneyPerTap"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                />
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beer Value: "
+                    android:id="@+id/beerValue"
+                    android:textColor="@color/colourBlack"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$ 0"
+                    android:textColor="@color/colourBlack"
+                    android:id="@+id/textViewBeerValue"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    />
+
+            </RelativeLayout>
+
+</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

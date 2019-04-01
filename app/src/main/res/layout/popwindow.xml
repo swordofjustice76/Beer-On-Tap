@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whitebg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/customborder"
+
+    >
+
+    <TextView
+        android:id="@+id/upgradesHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="UPGRADES"
+        android:textAlignment="center"
+        android:textColor="@color/colourBlack"
+        android:textSize="42dp"
+        android:textStyle="bold"
+
+
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--GOLDEN TOUCH UPGRADE-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customblackborder"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/goldentouch" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            android:id="@+id/goldenTouch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:text="Golden Touch"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/goldenTouchDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left"
+                            android:text="@string/increaseBeerValueDescription"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="13dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="70dp"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                               android:id="@+id/progressBarGoldenTouch"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:max="5"
+                                android:progress="0"
+                                android:indeterminate="false"
+                                android:progressDrawable="@drawable/progressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                />
+
+
+
+
+                            <Button
+                                android:id="@+id/buttonIncreaseBeerValueUpgrade2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/upgradepriceborder"
+                                android:gravity="center"
+                                android:text="$100"
+                                android:textColor="@color/colourBlack"
+                                android:textSize="16dp" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--STEROIDS UPGRADE-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/customblackborder"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/steroids" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/steroids"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:text="Steroids"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/steroidsDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="start"
+                            android:text="@string/increaseWorkerSpeedDescription"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="13dp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="70dp"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progressBarSteroids"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:max="5"
+                                android:progress="0"
+                                android:indeterminate="false"
+                                android:progressDrawable="@drawable/progressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                />
+
+                            <Button
+                                android:id="@+id/buttonIncreaseWorkerSpeedUpgrade2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="100dp"
+                                android:background="@drawable/upgradepriceborder"
+                                android:text="$500"
+                                android:textColor="@color/colourBlack"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--HOUSING UPGRADE-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/customblackborder"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/workerhousing" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/workerHousing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:text="Worker Housing"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/workerHousingDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/increaseWorkerCapacityDescription"
+                            android:textAlignment="center"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="13dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="70dp"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progressBarWorkerHousing"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:max="5"
+                                android:progress="0"
+                                android:indeterminate="false"
+                                android:progressDrawable="@drawable/progressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                />
+                            <Button
+                                android:id="@+id/buttonIncreaseWorkerCapacityUpgrade2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="100dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/upgradepriceborder"
+                                android:text="$2500"
+                                android:textColor="@color/colourBlack"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!---Advertising Upgrade-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/customblackborder"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/advertisement" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/advertisment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:text="Advertisment"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="18dp" />
+
+
+                        <TextView
+                            android:id="@+id/advertisingDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left"
+                            android:text="@string/increaseBeerSalesDescription"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="13dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="70dp"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progressBarAdvertisment"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:max="5"
+                                android:progress="0"
+                                android:indeterminate="false"
+                                android:progressDrawable="@drawable/progressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                />
+
+                            <Button
+                                android:id="@+id/buttonIncreaseBeerSalesUpgrade2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/upgradepriceborder"
+                                android:text="$5000"
+                                android:textColor="@color/colourBlack"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!---Bigger Kegs-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/customblackborder"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/biggerkegs" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/biggerKegs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:text="Bigger Kegs"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="18dp" />
+
+
+                        <TextView
+                            android:id="@+id/biggerKegsDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left"
+                            android:text="@string/biggerKegsDescription"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="13dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="70dp"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progressBarBiggerKegs"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:max="5"
+                                android:progress="0"
+                                android:indeterminate="false"
+                                android:progressDrawable="@drawable/progressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                />
+
+                            <Button
+                                android:id="@+id/buttonBiggerKegsUpgrade2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/upgradepriceborder"
+                                android:text="$20000"
+                                android:textColor="@color/colourBlack"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <!---PRO TAPPER Upgrade-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/customblackborder"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/protapper" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/protapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:text="Pro Tapper"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/proTapperDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/tripleTapvalueDescrption"
+                            android:textAlignment="center"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="13dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="70dp"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progressBarProTapper"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:max="1"
+                                android:progress="0"
+                                android:indeterminate="false"
+                                android:progressDrawable="@drawable/progressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                />
+
+
+                            <Button
+                                android:id="@+id/buttonTripleTapValueUpgrade2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/upgradepriceborder"
+                                android:text="$100000"
+                                android:textColor="@color/colourBlack"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!---24HR shifts-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/customblackborder"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/twentyfourhourshifts"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/twentyfourhrShifts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:text="24HR Shifts"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/twentyfourhrShiftsDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/doubleWorkerOutputDescription"
+                            android:textAlignment="center"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="13dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="70dp"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar24hrShifts"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:max="1"
+                                android:progress="0"
+                                android:indeterminate="false"
+                                android:progressDrawable="@drawable/progressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                />
+
+                            <Button
+                                android:id="@+id/buttonDoubleWorkerOutputUpgrade2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/upgradepriceborder"
+                                android:text="$500000"
+                                android:textColor="@color/colourBlack"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!---Robots-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/customblackborder"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/hirerobots" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/hireRobots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:text="Hire Robots"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/hireRobotsDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="70dp"
+                            android:text="@string/hireRobotsDescription"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="13dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="70dp"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progressBarHireRobots"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:max="5"
+                                android:progress="0"
+                                android:indeterminate="false"
+                                android:progressDrawable="@drawable/progressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                />
+
+                            <Button
+                                android:id="@+id/buttonHireRobots"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Robots"
+                                android:textSize="16dp"
+                                android:textColor="@color/colourBlack"
+                                android:background="@drawable/upgradepriceborder"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- Wizard SChool -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/customblackborder"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="left"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/wizardschool" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="70dp"
+                            android:text="Wizard School"
+                            android:id="@+id/wizardSchool"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/wizardSchoolDescription"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="70dp"
+                            android:text="@string/wizardDescription"
+                            android:textAlignment="center"
+                            android:textColor="@color/colourBlack"
+                            android:textSize="13dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="70dp"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progressBarWizardSchool"
+                                android:layout_width="100dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:max="5"
+                                android:progress="0"
+                                android:indeterminate="false"
+                                android:progressDrawable="@drawable/progressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/buttonWizardSchool"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="5dp"
+                                android:text="$6666666"
+                                android:textSize="16dp"
+                                android:textColor="@color/colourBlack"
+                                android:background="@drawable/upgradepriceborder"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
